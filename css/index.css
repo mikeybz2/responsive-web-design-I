@@ -16,8 +16,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
+	margin: 2%;
+	padding: 2;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -81,7 +81,8 @@ body{
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	align-items: center;
+    align-items: center;
+    
 
 
 	
@@ -94,7 +95,8 @@ nav{
 }
 a{
 	text-decoration: none;
-	color: grey;
+    color: grey;
+    margin: 0 7%;
 }
 
 
@@ -106,28 +108,32 @@ h1{
 	text-align: center;
 }
 .intro-title-button{
-	width: 100%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-right: 20%;
+	margin-right: 8%;
 }
 
 .img-header{
-	width: 70%;
+    width: 50%;
+    margin-right: 10%;
+    margin-left: 2%;
+    
 }
 
 .intro{
 	display: flex;
 	justify-content: end;
-	padding-left: 25%;
+    padding-left: 25%;
+    
 	margin-bottom: 4%;
-	height: 50vh;
+	height: 60vh;
 	margin-top: 3%;
 	/*margin-right: 14%;*/
 	border-bottom-style: solid;
-	box-sizing: border-box;
+	
 	
 }
 button{
@@ -145,7 +151,9 @@ button{
 }
 .box-img{
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    margin: 0%;
+    
 }
 .middle-img{
 	width: 100%;
@@ -155,33 +163,36 @@ button{
 }
 
 .features{
-	width: 48%;
-	padding: 3% 5%;
+	width: 45%;
+	
 }
 
 .about{
-	width: 48%;
-	padding: 3% 5%;
+    width: 45%;
+    
+	
 }
 
 .box-img{
-	width: 100%;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .services{
-	width: 32%;
-	padding: 3% 5%;
+	width: 28%;
+	
 }
 
 .products{
-	width: 32%;
-	padding: 3% 5%;
+	width: 28%;
+	
 }
 	
 
 
 .vision{
-	width: 32%;
-	padding: 3% 5%;
+	width: 28%;
+	
 }
 
 
@@ -214,24 +225,101 @@ footer{
        flex-direction: row-reverse;
       flex-direction: column-reverse;
        /*flex-wrap: wrap;*/
-       background-color: blue;
+       
        align-content: space-evenly;
        padding: 5%;
     }
 
     @media(max-width: 800px) {
-        nav-links{    
-        justify-content: space-evenly;
-        width: 100%;
-        margin-left: 100%;
-        
-        text-align: center;
+        a{ margin: unset;
+            
         }
-
+    
+        
+        }
+    
         /*tablet-intro middle*/
 
         @media(max-width: 800px) {
             .img-header{
-               visibility: hidden; {
+               visibility: hidden; 
                     
                 }
+        
+                @media(max-width: 800px) {
+                    button{
+                       
+                       padding: 2 4%;
+                       width: 50%;
+                            
+                        }
+
+
+            /*mobile platform*/
+            /*mobile header*/
+
+           
+     
+     
+     
+     @media(max-width: 500px) {
+        .nav-links{    
+        flex-direction: column;
+        border-bottom: solid;
+        
+        }
+
+        @media(max-width: 500px){
+            a{
+                padding: 3%;
+                border-top-style: solid;
+                width: 100%;
+                text-align: center;
+                }
+
+/*mobile-intro middle*/
+
+@media(max-width: 500px){
+    .intro{
+        
+        width: 100%;
+        padding: 5%;
+        margin-top: 20%;
+        margin-bottom: 1%;
+        padding-bottom: 20%;
+        margin-left: 25%;
+        border-bottom: none;
+        
+        
+}
+
+@media(max-width: 500px){
+   h1{
+       text-align: center;{
+       }
+       
+        
+        
+}
+
+   @media(max-width: 500px){
+       .middle-section{
+           border-top: solid;
+       }
+
+       @media(max-width: 500px){
+        .middle-section-content{
+            width: 100%;
+            flex-direction: column;
+            
+            
+            
+
+        }
+
+        @media(max-width: 500px){
+            .box{
+               
+                
+                width: 100%;
+            }
